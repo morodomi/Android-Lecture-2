@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 /**
- * ArrayAdapter which controls view of each row in the ListView
+ * ArrayAdapter which controls view of each rows in the ListView
  * @author Masahiro Morodomi <morodomi at gmail.com>
  */
 public class ListViewAdapter extends ArrayAdapter<String> {

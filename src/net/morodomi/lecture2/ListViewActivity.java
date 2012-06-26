@@ -4,6 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+/**
+ * Activity for Android Lecture 2
+ * This class controls whole view of this app.
+ * @author Masahiro Morodomi <morodomi at gmail.com>
+ *
+ */
 public class ListViewActivity extends Activity {
 	// countries list
 	private static final String[] countries = { "Japan", "United States",
