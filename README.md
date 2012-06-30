@@ -17,6 +17,8 @@ In this Lecture, you will learn how to use and customize ListView.
  * Check when an item of the list is called from Android framework.
  * Customize row from black to white background. Also for text color from white to black.
  * Move the list item from String array in the Java program to Resource XML file. (use string-array XML)
+ * Dynamically add and remove items of the list.
+ * Open a dialog when an item is clicked or selected. Also show the information (string) of the item.
 
 ##License
     Copyright (c) on 2012, Masahiro Morodomi
