@@ -1,6 +1,8 @@
 package net.morodomi.lecture2;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +43,7 @@ public class ListViewAdapter extends ArrayAdapter<String> {
 		ListViewHolder holder;
 		// if view is null
 		if (convertView == null) {
+			Log.d("morodomi", "convertView == null");
 			// inflate row from LayoutInflator
 			convertView = this.inflater.inflate(R.layout.list_item, null);
 			// create view holder
@@ -52,12 +55,18 @@ public class ListViewAdapter extends ArrayAdapter<String> {
 			// set holder to view as Tag
 			convertView.setTag(holder);
 		} else {
+			Log.d("morodomi", "convertView != null");
 			// get view holder from row
 			holder = (ListViewHolder) convertView.getTag();
-		}
+		}	
 		// set text to the view
 		holder.number.setText(" " + position + " : ");
 		holder.name.setText((String) getItem(position));
+		holder.number.setTextColor(Color.RED);
+		holder.name.setTextColor(Color.RED);
+		convertView.setBackgroundColor(Color.BLUE);
+		// output log
+		Log.d("morodomi", "country:" + getItem(position));
 		// return view
 		return convertView;
 	}
